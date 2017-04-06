@@ -1,0 +1,272 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.navbar-header h4 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+}
+
+.hp-main-page {
+  padding-top: 70px;
+  margin-top: 50px;
+}
+
+.hp-load-btn {
+  margin-bottom: 50px;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #e5e5e5;
+  border-color: #979797;
+  padding: 10px 35px;
+}
+
+.btn:focus,
+.btn:active:focus {
+  outline: none;
+}
+
+/* Hotels Transition */
+.hotels-transition-enter{
+  opacity: 0.01;
+}
+
+.hotels-transition-enter.hotels-transition-enter-active {
+  opacity: 1;
+  transition: opacity 3000ms ease;
+}
+
+.hotels-transition-appear {
+   opacity: 0.01;
+}
+
+.hotels-transition-appear.hotels-transition-appear-active {
+   opacity: 1;
+   transition: opacity 3000ms ease-in;
+}
+
+/* Review Transition */
+.reviews-transition-enter{
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.reviews-transition-enter.reviews-transition-enter-active {
+  opacity: 1;
+}
+
+.reviews-transition-appear {
+  opacity: 0;
+  transition: opacity 700ms ease-in;
+}
+
+.reviews-transition-appear.reviews-transition-appear-active {
+   opacity: 1;
+}
+
+.reviews-leave {
+  opacity: 1;
+  transition: opacity 300ms ease-out;
+}
+
+.reviews-leave.reviews-leave-active {
+  opacity: 0;
+}
+
+
+/* Hotel */
+.hp-hotel {
+  border: 1px solid #979797;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.hp-hotel .col-md-4 {
+  border-right: 1px solid #979797;
+  padding: 0;
+}
+
+.hp-container {
+  display: flex;
+}
+
+.hp-top-banner .col-md-4 {
+  border-right: 0;
+}
+
+.hp-top-banner h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.hp-hotel .col-md-8 {
+  background-color: #f8f8f8;
+}
+
+.hp-stars {
+  font-size: 20px;
+  margin: 27px 0 0;
+  float: right;
+}
+
+.hp-stars span {
+  margin-right: 3px;
+}
+
+.hp-description {
+  margin-top: 15px;
+}
+
+.hp-bottom {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+}
+
+.hp-bottom p {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.hp-price-wrapper {
+  padding-right: 20px;
+}
+
+.hp-price {
+  font-size: 30px;
+}
+
+
+/* Reviews */
+.hp-reviews {
+  border-top: 1px solid #979797;
+  background-color: #bbbbbb;
+  padding: 35px 25px;
+}
+
+.hp-review-type {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #fff;
+  margin: 20px auto 0;
+}
+
+.hp-review h4 {
+  font-weight: 700;
+}
+
+.hp-hr-line {
+  width: 95%;
+  height: 1px;
+  display: inline-block;
+  background-color: rgba(158, 158, 158, 0.55);
+  margin: 25px 2.5%;
+  position: relative;
+  clear: both;
+}
+
+.hp-review:last-child .hp-hr-line {
+  display: none;
+}
+
+.hp-error-message {
+  text-align: center;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  background-color: #ccc;
+  padding: 20px 0;
+  margin: 50px auto;
+}
+
+.hp-error-message h4 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 991px) {
+  .navbar-header h4 {
+    margin: 0 20px;
+  }
+  
+  .hp-hotel { 
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hp-hotel .col-md-4 {
+    border-right: 0;
+  }
+  
+  .hp-container {
+    display: block;
+  }
+  
+  .hp-content {
+    padding: 0;
+  }
+  
+  .hp-stars {
+    margin: 5px 0 10px 0;
+    float: left;
+  }
+  
+  .hp-bottom {
+    position: relative;
+    text-align: center;
+    bottom: auto;
+    right: auto;
+  }
+  
+  .hp-bottom button {
+    margin-top: 10px;
+  }
+  
+  .hp-price-wrapper {
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .hp-reviews {
+    padding: 35px 15px;
+  }
+  
+  .hp-review .col-xs-2 {
+    padding: 0 0 0 10px;
+  }
+  
+  .hp-hr-line {
+    width: 90%;
+    margin: 18px 5%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  .hp-hotel .img-responsive {
+    height: 100%;
+    max-height: 290px;
+  }
+  
+  .hp-bottom {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 7px 0;
+  }
+}
